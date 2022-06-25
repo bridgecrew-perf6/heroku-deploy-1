@@ -8,7 +8,7 @@ function App() {
 
   const   HandleSubmit=async (e)=>{
       e.preventDefault();
-      const resp= await fetch("/api/",{
+      const resp= await fetch("/",{
         method:'POST',
         headers:{
           'Content-Type':'application/json'
