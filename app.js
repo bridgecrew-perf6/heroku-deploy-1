@@ -6,6 +6,7 @@ const api=require("./server/api");
 
 app.use('/api',api);
 
+
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('*', function (req, res) {
