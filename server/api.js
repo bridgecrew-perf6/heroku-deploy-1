@@ -5,6 +5,7 @@ const shortid = require('shortid');
 const list = {};
 
 router.use(express.json());
+
 router.post("/", (req, res) => {
     const id = shortid.generate();
     list[id] = req.body.longUrl;
